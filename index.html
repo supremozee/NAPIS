@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Page Not Found</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			margin: 100px auto;
+			max-width: 600px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 120px;
+			margin: 0;
+			color: #333;
+		}
+
+		p {
+			font-size: 24px;
+			margin: 20px 0;
+			color: #666;
+		}
+
+		a {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		a:hover {
+			background-color: #555;
+		}
+
+		.background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: 0.5;
+			background-image: url("https://images.unsplash.com/photo-1556905055-8f0378d523b4");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	</style>
+	<script>
+		const background = document.createElement('div');
+		background.classList.add('background');
+		document.body.appendChild(background);
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>404</h1>
+		<p>Sorry, the page you are looking for could not be found.</p>
+		<a href="#">Go back to homepage</a>
+	</div>
+</body>
+</html>
